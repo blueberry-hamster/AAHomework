@@ -57,12 +57,6 @@ end
 # p "peeking: #{q.peek}"
 # p "dequeuing off #{q.dequeue} from #{q.queue} and #{q.dequeue} from #{q.queue}"
 
-# As you saw in the videos for tonight, a map can be implemented using a 2D array. Let's write a Map class (following a similar pattern to Stack and Queue) that implements a map using only arrays.
-
-# Remember, a map stores information in key-value pairs, where the keys are always unique. When implemented with arrays, a map might look something like this: my_map = [[k1, v1], [k2, v2], [k3, v2], ...].
-
-# Our Map class should have the following instance methods: set(key, value), get(key), delete(key), show. Note that the set method can be used to either create a new key-value pair or update the value for a pre-existing key. It's up to you to check whether a key currently exists!
-
 class Map 
     def initialize
         @map = []
@@ -93,14 +87,14 @@ class Map
     end
 end
 
-hash = Map.new 
-puts "hash is empty: #{hash.show}"
-hash.set("a", 1)
-puts "set a=>1 #{hash.show}"
-hash.set("b", 2)
-puts "set b=>2 #{hash.show}"
-hash.set("b", 3)
-puts "set b=>3 #{hash.show}"
-p hash.get("a")
-hash.delete("a")
-puts "deleted a #{hash.show}"
+# hash = Map.new 
+# puts "hash is empty: #{hash.show}"
+# hash.set("a", 1)
+# puts "set a=>1 #{hash.show}"
+# hash.set("b", 2)
+# puts "set b=>2 #{hash.show}"
+# hash.set("b", 3)
+# puts "set b=>3 #{hash.show}"
+# p hash.get("a")
+# hash.delete("a")
+# puts "deleted a #{hash.show}"
