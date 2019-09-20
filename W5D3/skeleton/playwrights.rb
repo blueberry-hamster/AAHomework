@@ -17,6 +17,7 @@ class Playwright
     def self.all
         data = PlaywrightDBConnection.instance.execute("SELECT * FROM playwrights")
         data.map { |datum| Playwright.new(datum) }
+        return nil unless playwrights.length > 0
     end
 
     def self.find_by_name(name)
